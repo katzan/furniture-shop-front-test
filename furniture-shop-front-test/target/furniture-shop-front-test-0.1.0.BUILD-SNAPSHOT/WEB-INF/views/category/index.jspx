@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div  xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" xmlns:util="urn:jsptagdir:/WEB-INF/tags/util" xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:fmt="http://java.sun.com/jsp/jstl/fmt" version="2.0">
+  <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+  <jsp:output omit-xml-declaration="yes"/> 
+     ${furnitureCategory.categoryName }<br/>
+  <!-- 	<div id="items">
+			<c:if test="${furnitureCategory.furnitureItems!=null}">
+				<c:forEach items="${furnitureCategory.furnitureItems}" var="furCal">
+					<div class="item">
+						    <img src="${pageContext.request.contextPath}/img/${furCal.smallImageFile }" alt="" width="202" height="173" /><br />
+						<span>$${furCal.itemPrice}</span><a href="${pageContext.request.contextPath}/collection/${furCal.id}" class="view">Модель</a><a href="#" class="buy">Заказать</a>
+					</div>
+				</c:forEach>
+			</c:if>
+	</div> -->
+
+	
+	<div class="collectionBanner group">
+	  							
+									<table class="swatched-banner">
+			<tbody>
+			 <c:forEach items="${furnitureCategory.furnitureCollections}" var="furCol">
+				<tr>
+					<td style="height: 276px;" class="categoryBannerDesc" valign="middle">
+													
+						<a href="" class="catLink"></a><h1 class="brand bannerHead1 categoryHeader">
+							<a href="${pageContext.request.contextPath}/collection/${furCol.id}"><span class="brand bannerHead">
+								${furCol.collectionName }<span class="collection">
+								 
+									</span></span>
+									</a></h1>
+													
+										<h4 class="">1 цвет<br/><br/>Цена за комплект от <fmt:formatNumber groupingUsed="true"> ${furCol.collectionPrice }</fmt:formatNumber> руб.</h4>
+										(кровать + 2 тумбы)
+										</td>
+									<td class="banner-image" rowspan="2"><a href="${pageContext.request.contextPath}/collection/${furCol.id}"><img src="${pageContext.request.contextPath}/resources/img/${furCol.smallImageFile}"/>
+										</a></td>
+										</tr>
+											<tr>
+										<td style="height: 66px;" class="banner-swatches">
+										<a href=""><img src="${pageContext.request.contextPath}/resources/images/sw_cg_bed_empire.jpg" alt=""/>
+											</a></td>
+						</tr>
+					</c:forEach>
+				</tbody>
+	</table>
+
+	</div>
+</div>

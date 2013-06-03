@@ -1,0 +1,58 @@
+<aspectj>
+<aspects>
+<aspect name="com.katzan.spring.furniturefronttest.model.Contact_Roo_JavaBean"/>
+<aspect name="com.katzan.spring.furniturefronttest.repository.FurnitureNewsRepository_Roo_Jpa_Repository"/>
+<aspect name="com.katzan.spring.furniturefronttest.repository.ServiceItemRepository_Roo_Jpa_Repository"/>
+<aspect name="com.katzan.spring.furniturefronttest.model.FurnitureItem_Roo_ToString"/>
+<aspect name="com.katzan.spring.furniturefronttest.repository.ShopOrderRepository_Roo_Jpa_Repository"/>
+<aspect name="com.katzan.spring.furniturefronttest.model.AboutUs_Roo_Jpa_Entity"/>
+<aspect name="com.katzan.spring.furniturefronttest.model.Article_Roo_Jpa_Entity"/>
+<aspect name="com.katzan.spring.furniturefronttest.model.ShopOrderDetail_Roo_ToString"/>
+<aspect name="com.katzan.spring.furniturefronttest.model.FurnitureNews_Roo_ToString"/>
+<aspect name="com.katzan.spring.furniturefronttest.model.AboutUs_Roo_Configurable"/>
+<aspect name="com.katzan.spring.furniturefronttest.model.FurnitureNews_Roo_Jpa_Entity"/>
+<aspect name="com.katzan.spring.furniturefronttest.model.FurnitureCollection_Roo_JavaBean"/>
+<aspect name="com.katzan.spring.furniturefronttest.model.ShopOrderDetail_Roo_Jpa_Entity"/>
+<aspect name="com.katzan.spring.furniturefronttest.model.Article_Roo_Configurable"/>
+<aspect name="com.katzan.spring.furniturefronttest.model.ServiceItem_Roo_Jpa_ActiveRecord"/>
+<aspect name="com.katzan.spring.furniturefronttest.model.ServiceItem_Roo_Jpa_Entity"/>
+<aspect name="com.katzan.spring.furniturefronttest.model.ShopOrder_Roo_Jpa_Entity"/>
+<aspect name="com.katzan.spring.furniturefronttest.model.ServiceItem_Roo_ToString"/>
+<aspect name="com.katzan.spring.furniturefronttest.repository.UserAccountRepository_Roo_Jpa_Repository"/>
+<aspect name="com.katzan.spring.furniturefronttest.model.FurnitureCategory_Roo_ToString"/>
+<aspect name="com.katzan.spring.furniturefronttest.model.AboutUs_Roo_JavaBean"/>
+<aspect name="com.katzan.spring.furniturefronttest.model.AboutUs_Roo_ToString"/>
+<aspect name="com.katzan.spring.furniturefronttest.model.Article_Roo_JavaBean"/>
+<aspect name="com.katzan.spring.furniturefronttest.model.UserAccount_Roo_JavaBean"/>
+<aspect name="com.katzan.spring.furniturefronttest.model.FurnitureCategory_Roo_JavaBean"/>
+<aspect name="com.katzan.spring.furniturefronttest.model.AboutUs_Roo_Jpa_ActiveRecord"/>
+<aspect name="com.katzan.spring.furniturefronttest.model.FurnitureCollection_Roo_ToString"/>
+<aspect name="com.katzan.spring.furniturefronttest.repository.FurnitureItemRepository_Roo_Jpa_Repository"/>
+<aspect name="com.katzan.spring.furniturefronttest.model.UserAccount_Roo_ToString"/>
+<aspect name="com.katzan.spring.furniturefronttest.model.FurnitureItem_Roo_JavaBean"/>
+<aspect name="com.katzan.spring.furniturefronttest.model.Contact_Roo_Jpa_Entity"/>
+<aspect name="com.katzan.spring.furniturefronttest.model.FurnitureCategory_Roo_Jpa_Entity"/>
+<aspect name="com.katzan.spring.furniturefronttest.model.FurnitureItem_Roo_Jpa_Entity"/>
+<aspect name="com.katzan.spring.furniturefronttest.model.ShopOrderDetail_Roo_JavaBean"/>
+<aspect name="com.katzan.spring.furniturefronttest.model.FurnitureCollection_Roo_Jpa_Entity"/>
+<aspect name="com.katzan.spring.furniturefronttest.model.Contact_Roo_ToString"/>
+<aspect name="com.katzan.spring.furniturefronttest.repository.FurnitureCollectionRepository_Roo_Jpa_Repository"/>
+<aspect name="com.katzan.spring.furniturefronttest.model.ServiceItem_Roo_Configurable"/>
+<aspect name="com.katzan.spring.furniturefronttest.repository.ImageFileRepository_Roo_Jpa_Repository"/>
+<aspect name="com.katzan.spring.furniturefronttest.model.Article_Roo_Jpa_ActiveRecord"/>
+<aspect name="com.katzan.spring.furniturefronttest.repository.ArticleRepository_Roo_Jpa_Repository"/>
+<aspect name="com.katzan.spring.furniturefronttest.model.Article_Roo_ToString"/>
+<aspect name="com.katzan.spring.furniturefronttest.model.UserAccount_Roo_Jpa_Entity"/>
+<aspect name="com.katzan.spring.furniturefronttest.model.ImageFile_Roo_JavaBean"/>
+<aspect name="com.katzan.spring.furniturefronttest.model.ShopOrder_Roo_JavaBean"/>
+<aspect name="com.katzan.spring.furniturefronttest.repository.ContactRepository_Roo_Jpa_Repository"/>
+<aspect name="com.katzan.spring.furniturefronttest.model.ImageFile_Roo_Jpa_Entity"/>
+<aspect name="com.katzan.spring.furniturefronttest.repository.AboutUsRepository_Roo_Jpa_Repository"/>
+<aspect name="com.katzan.spring.furniturefronttest.model.FurnitureNews_Roo_JavaBean"/>
+<aspect name="com.katzan.spring.furniturefronttest.repository.FurnitureCategoryRepository_Roo_Jpa_Repository"/>
+<aspect name="com.katzan.spring.furniturefronttest.model.ServiceItem_Roo_JavaBean"/>
+<aspect name="com.katzan.spring.furniturefronttest.model.ShopOrder_Roo_ToString"/>
+<aspect name="com.katzan.spring.furniturefronttest.model.ImageFile_Roo_ToString"/>
+</aspects>
+</aspectj>
+

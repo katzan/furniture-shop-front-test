@@ -1,0 +1,30 @@
+<div id="main_block" xmlns:spring="http://www.springframework.org/tags" xmlns:util="urn:jsptagdir:/WEB-INF/tags/util" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:fmt="http://java.sun.com/jsp/jstl/fmt" version="2.0">
+  <jsp:directive.page contentType="text/html;charset=UTF-8" />
+  <jsp:output omit-xml-declaration="yes" />
+ 
+				<div class="about">
+					<img src="/resources/images/title2.gif" alt="" width="191" height="30" /><br />
+					<p> В нашем мебельном магазине мы предлагаем Вам лучшие образцы современной мебели, по низким ценам с отличным сервисом. Профессиональные консультанты помогут Вам выбрать именно то, что Вам нужно. Заказывайте мебель у нас с удовольствием!</p>
+					
+				</div>
+				<div class="news">
+					<img src="/resources/images/title3.gif" alt="" width="69" height="30" /><br />
+					<p>Этот новостной блок предназначен для размещения в нем последних актуальных новостей как нашего магазина, так и мировой мебельной отрасли. Спецпредложения тоже могу здесь размещаться.  </p>
+				</div>
+				<div id="items">
+	 	         <c:forEach items="${firstItems}" var="furCal">
+	 	           <div class="item_shell">
+	 				<div class="item_name">${furCal.itemName } </div>
+					<div class="item">
+						 <a href="${pageContext.request.contextPath}/item/${furCal.id}">  
+						   <img src="${pageContext.request.contextPath}/resources/img/${furCal.smallImageFile }" alt=""  />
+						 </a>
+						<!-- <div><span> <fmt:formatNumber groupingUsed="true">${furCal.itemPrice}</fmt:formatNumber>  руб.</span></div> -->
+					</div>
+				  </div>
+				</c:forEach>
+
+
+				</div>
+			
+</div>

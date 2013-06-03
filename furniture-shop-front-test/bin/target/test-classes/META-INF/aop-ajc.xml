@@ -1,0 +1,13 @@
+<aspectj>
+<aspects>
+<aspect name="com.katzan.spring.furniturefronttest.model.FurnitureCollectionIntegrationTest_Roo_Configurable"/>
+<aspect name="com.katzan.spring.furniturefronttest.model.FurnitureItemDataOnDemand_Roo_Configurable"/>
+<aspect name="com.katzan.spring.furniturefronttest.model.ImageFileIntegrationTest_Roo_Configurable"/>
+<aspect name="com.katzan.spring.furniturefronttest.model.FurnitureItemIntegrationTest_Roo_Configurable"/>
+<aspect name="com.katzan.spring.furniturefronttest.model.FurnitureCollectionDataOnDemand_Roo_Configurable"/>
+<aspect name="com.katzan.spring.furniturefronttest.model.ImageFileDataOnDemand_Roo_Configurable"/>
+<aspect name="com.katzan.spring.furniturefronttest.model.FurnitureCategoryIntegrationTest_Roo_Configurable"/>
+<aspect name="com.katzan.spring.furniturefronttest.model.FurnitureCategoryDataOnDemand_Roo_Configurable"/>
+</aspects>
+</aspectj>
+

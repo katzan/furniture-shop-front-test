@@ -1,0 +1,17 @@
+<div id="header" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:fn="http://java.sun.com/jsp/jstl/functions" xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+  <jsp:directive.page contentType="text/html;charset=UTF-8" />
+  <jsp:output omit-xml-declaration="yes" />
+                                                                                                                                                                                                                                                                                                   
+        <div id="header_inside">
+            <img src="${pageContext.request.contextPath}/images/header.jpg" alt="setalpm" width="999" height="222" border="0" usemap="#Map" /><br />                                                                                                                                                                        
+            <ul id="menu">
+                <li><a href="${pageContext.request.contextPath}/index.html" class="but1">Главная</a></li>
+                <li><a href="${pageContext.request.contextPath}/aboutus/about_us.html" class="but2">О нас</a></li>
+                <li><a href="${pageContext.request.contextPath}/newsevents/news_events.html" class="but3">Новости &amp; События</a></li>
+                <li><a href="${pageContext.request.contextPath}/article/article.html" class="but4">Статьи</a></li>
+                <li><a href="${pageContext.request.contextPath}/cabinet/cabinet.html" class="but5">Кабинет</a></li>
+                <li><a href="${pageContext.request.contextPath}/contact/contacts.html" class="but6_active">Контакты</a></li>
+            </ul>
+        </div>        
+ 
+</div> 

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" xmlns:util="urn:jsptagdir:/WEB-INF/tags/util" xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:fmt="http://java.sun.com/jsp/jstl/fmt" xmlns:forms="http://www.springframework.org/tags/form" version="2.0">
+  <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+  <jsp:output omit-xml-declaration="yes"/>
+  <!-- <spring:message code="label_checkout_index" htmlEscape="false" var="title"/>
+  <util:panel id="title" title="${title}">
+    <spring:message code="application_name" htmlEscape="false" var="app_name"/>
+    <h3>
+      <spring:message arguments="${app_name}" code="welcome_titlepane"/>
+    </h3>
+  </util:panel><br/> -->
+  
+  <forms:form method="POST" modelAttribute="order">
+    <div class="clear">
+    <!-- <fieldset>
+        <legend><spring:message code="cart.account.information"/></legend>
+        <table>
+            <tr><td><spring:message code="account.firstname" /></td><td>${order.account.firstName}</td></tr>
+            <tr><td><spring:message code="account.lastname" /></td><td>${order.account.lastName}</td></tr>
+        </table>
+    </fieldset> -->
+    <div class="clear" style="float: left;">
+        <fieldset>
+            <legend><spring:message code="customer.information"/></legend>
+               <!--  <div><forms:label path="billingSameAsShipping"><spring:message code="cart.checkout.billingSameAsShipping"/></forms:label><forms:checkbox path="billingSameAsShipping" /></div> -->
+                
+              <table >
+                    <tr><td><forms:label path="account.firstName" cssErrorClass="error"><spring:message code="account.firstname" /></forms:label></td><td><forms:input path="account.firstName" /></td><td><forms:errors path="account.firstName" class="errorCode" /></td></tr>
+                    <tr><td><forms:label path="account.lastName" cssErrorClass="error"><spring:message code="account.lastname" /></forms:label></td><td><forms:input path="account.lastName" /></td><td><forms:errors path="account.lastName" class="errorCode"/></td></tr>
+                    <tr><td><forms:label path="account.emailAddress" cssErrorClass="error"><spring:message code="account.emailAddress" /></forms:label></td><td><forms:input path="account.emailAddress" /></td><td><forms:errors path="account.emailAddress" class="errorCode"/></td></tr>
+                    <tr><td><forms:label path="account.phoneNumber" cssErrorClass="error"><spring:message code="account.phoneNumber" /></forms:label></td><td><forms:input path="account.phoneNumber" /></td><td><forms:errors path="account.phoneNumber" class="errorCode"/></td></tr>
+                     <tr><td><forms:label path="comments" cssErrorClass="error"><spring:message code="order.comments" /></forms:label></td><td><forms:input path="comments" /></td><td><forms:errors path="comments" class="errorCode"/></td></tr>
+                    <!-- <tr><td><form:label path="billingAddress.country" cssErrorClass="error"><spring:message code="address.country" /></form:label></td><td><form:select path="billingAddress.country" items="${countries}" disabled="${order.billingSameAsShipping}"/></td><td><form:errors path="billingAddress.country"/></td></tr>   -->     
+                </table> 
+        </fieldset>
+      </div>  
+      <div class="clear"> 
+        <fieldset>
+            <legend><spring:message code="cart.checkout.shipping"/></legend>
+                <table style="display: block">
+                    <tr><td><forms:label path="shippingAddress.street" cssErrorClass="error"><spring:message code="address.street" /></forms:label></td><td><forms:input path="shippingAddress.street" /></td><td><forms:errors path="shippingAddress.street"/></td></tr>
+                    <tr><td><forms:label path="shippingAddress.houseNumber" cssErrorClass="error"><spring:message code="address.houseNumber" /></forms:label></td><td><forms:input path="shippingAddress.houseNumber" /></td><td><forms:errors path="shippingAddress.houseNumber"/></td></tr>
+                    <tr><td><forms:label path="shippingAddress.boxNumber" cssErrorClass="error"><spring:message code="address.boxNumber" /></forms:label></td><td><forms:input path="shippingAddress.boxNumber" /></td><td><forms:errors path="shippingAddress.boxNumber"/></td></tr>
+                    <tr><td><forms:label path="shippingAddress.city" cssErrorClass="error"><spring:message code="address.city" /></forms:label></td><td><forms:input path="shippingAddress.city" /></td><td><forms:errors path="shippingAddress.city"/></td></tr>
+                    <tr><td><forms:label path="shippingAddress.postalCode" cssErrorClass="error"><spring:message code="address.postalCode" /></forms:label></td><td><forms:input path="shippingAddress.postalCode" /></td><td><forms:errors path="shippingAddress.postalCode"/></td></tr>
+                    <!-- <tr><td><forms:label path="shippingAddress.country" cssErrorClass="error"><spring:message code="address.country" /></forms:label></td><td><forms:select path="shippingAddress.country" items="${countries}"/></td><td><forms:errors path="shippingAddress.country"/></td></tr> -->
+                </table>
+        </fieldset>
+      </div>
+      <div class="clear">
+        <fieldset>
+            <legend><spring:message code="cart.checkout.order"/></legend>
+            <table>
+                <thead>
+                    <tr><th>№</th><th><spring:message code="item.name"/></th><th><spring:message code="order.quantity"/></th><th><spring:message code="item.price"/></th></tr>
+                </thead>
+                <tbody>
+                    <c:forEach items="${order.orderDetails}" var="detail" varStatus="status">
+                            <tr><td>${status.index+1 }.</td><td>${detail.furnitureItem.itemName}</td><td><forms:input path="orderDetails[${status.index}].quantity" size="2"/></td><td>${detail.price}</td></tr>   
+                    </c:forEach>
+                 <tr><td colspan="3"  align="right"><spring:message code="order.total"/></td><td>${order.totalOrderPrice}</td></tr> 
+                </tbody>
+            </table>
+        </fieldset>
+    </div>
+    </div>
+    
+    <div></div>
+    <button id="order" name="order"><spring:message code="button.order"/></button>
+    <button id="update" name="update"><spring:message code="button.update"/></button>
+ 
+</forms:form>
+  
+</div>
