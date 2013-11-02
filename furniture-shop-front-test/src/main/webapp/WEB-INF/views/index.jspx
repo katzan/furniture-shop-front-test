@@ -1,30 +1,128 @@
-<div id="main_block" xmlns:spring="http://www.springframework.org/tags" xmlns:util="urn:jsptagdir:/WEB-INF/tags/util" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:fmt="http://java.sun.com/jsp/jstl/fmt" version="2.0">
+
+
+<div id="slider" xmlns:spring="http://www.springframework.org/tags" xmlns:util="urn:jsptagdir:/WEB-INF/tags/util" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:fmt="http://java.sun.com/jsp/jstl/fmt" version="2.0">
   <jsp:directive.page contentType="text/html;charset=UTF-8" />
   <jsp:output omit-xml-declaration="yes" />
- 
-				<div class="about">
-					<img src="/resources/images/title2.gif" alt="" width="191" height="30" /><br />
-					<p> В нашем мебельном магазине мы предлагаем Вам лучшие образцы современной мебели, по низким ценам с отличным сервисом. Профессиональные консультанты помогут Вам выбрать именно то, что Вам нужно. Заказывайте мебель у нас с удовольствием!</p>
-					
-				</div>
-				<div class="news">
-					<img src="/resources/images/title3.gif" alt="" width="69" height="30" /><br />
-					<p>Этот новостной блок предназначен для размещения в нем последних актуальных новостей как нашего магазина, так и мировой мебельной отрасли. Спецпредложения тоже могу здесь размещаться.  </p>
-				</div>
-				<div id="items">
-	 	         <c:forEach items="${firstItems}" var="furCal">
-	 	           <div class="item_shell">
-	 				<div class="item_name">${furCal.itemName } </div>
-					<div class="item">
-						 <a href="${pageContext.request.contextPath}/item/${furCal.id}">  
-						   <img src="${pageContext.request.contextPath}/resources/img/${furCal.smallImageFile }" alt=""  />
-						 </a>
-						<!-- <div><span> <fmt:formatNumber groupingUsed="true">${furCal.itemPrice}</fmt:formatNumber>  руб.</span></div> -->
-					</div>
-				  </div>
-				</c:forEach>
-
-
-				</div>
-			
+<div id="container">
+<div id="mySlides">
+    <div id="slide1">    
+        <img src="jFlowPlusDemo/images/slide1.jpg" alt="Slide 1 jFlow Plus" />
+	</div>    	
+    <div id="slide2">
+        <img src="jFlowPlusDemo/images/slide1.jpg" alt="Slide 2 jFlow Plus" />
+    </div>   
+	<div id="slide3">
+        <img src="jFlowPlusDemo/images/slide1.jpg" alt="Slide 3 jFlow Plus" />
+    </div>
 </div>
+
+<div id="myController">
+   <span class="jFlowControl"></span>
+   <span class="jFlowControl"></span>
+   <span class="jFlowControl"></span>
+</div>
+
+<span class="jFlowPrev"><div></div></span>
+<span class="jFlowNext"><div></div></span>
+</div>
+
+</div>
+		<div style="clear:both;margin-bottom: 25px;"></div>
+		<div id="soderjimoe"><p>îáðî ïîæàëîâàòü íà ñàéò MebelVopt.ru!</p> 
+<p>àøà êîìïàíèß ðîäèëàñü êàê êîìïàíèß-ïåðåâîç÷èê è äîëãîå âðåìß ìû ïîìîãàëè 
+íàøèì ïàðòíÞðàì â äîñòàâêå èõ ãðóçà. û ìíîãî äóìàëè, èçó÷àëè è òåïåðü ìû 
+çàíèìàåìñß íå òîëüêî ïåðåâîçêàìè, íî è ïîñòàâêàìè ìåáåëè â îññèþ. </p>
+<p>û - îïòîâàß êîìïàíèß ïî ïîñòàâêå êà÷åñòâåííîé ìåáåëè èç èòàß, àëàéçèè, 
+üåòíàìà. àøà ðàáîòà Ð ïîìîãàòü íàøèì ïàðòíåðàì â ðàçâèòèè îññèéñêîãî 
+ðûíêà ýêñïîðòíîé ìåáåëè. û ñîòðóäíè÷àåì ñ êðóïíåéøèìè ïðîèçâîäèòåëßìè
+ìåáåëè â èòàå, êîòîðûå äåëàþò êà÷åñòâåííûå àíàëîãè åâðîïåéñêîé ìåáåëè. 
+àøèìè îñíîâíûìè óñëîâèßìè äëß ñîòðóäíè÷åñòâà ñ ôàáðèêîé ßâëßþòñß: 
+âûñîêîå êà÷åñòâî, êîòîðîå ìû ìîæåì ãàðàíòèðîâàòü íàøèì ïàðòíåðàì â îññèè, 
+îòëàæåííàß ñèñòåìà ïîñòàâêè, ïðèåìëåìàß öåíà. </p>
+<p>îýòîìó ðàáîòàòü ñ íàìè íàäåæíî, ïðîñòî è âûãîäíî.</p></div>
+		<div id="forma">
+			<h2>äåëàéòå ïåðâûé øàã:</h2>
+			<form id="formavhoda" action="URL">
+				<div class="sforma">
+					<div class="spanforma"><span>ìß:</span></div> 
+					<div class="spaninput"><input name="name" value="" type="text" class="inputpole"/></div>
+				</div>
+				<div class="sforma">
+					<div class="spanforma"><span>åëåôîí:</span></div>
+					<div class="spaninput"><input name="name" value="" type="text" class="inputpole"/></div>
+				</div>
+				<div class="sforma">
+					<div class="spanforma"><span>E-mail:</span></div> 
+					<div class="spaninput"><input name="name" value="" type="text" class="inputpole"/></div>
+				</div>
+				<div id="otpravka"><button>òïðàâèòü çàßâêó</button></div>
+			</form>
+		</div>
+		<div style="clear:both; margin-bottom:20px"></div>
+		<div id="product1">
+			<div class="trproduct">
+				<img src="img/struktyra_glavnaya_1.png" alt="îâèíêè"/>
+				<div class="pop l1"><span>îâèíêè</span></div>
+			</div>
+			<div class="trproduct">
+				<img src="img/struktyra_glavnaya_2.png" alt="îïóëßðíûå"/>
+				<div class="pop l2"><span>îïóëßðíûå</span></div>
+			</div>
+			<div class="trproduct">
+				<img src="img/struktyra_glavnaya_3.png" alt="êöèè"/>
+				<div class="pop l3"><span>êöèè</span></div>
+			</div>
+		</div>
+		<div style="clear:both"></div>
+	<div id="vse"><a class="hv" href="#"><h2 style="margin-left: 10px;">ñß ìåáåëü:</h2></a>
+		<div style="clear:both"></div>
+		<div class="prod">
+		<div class="product">
+			<div class="obram">
+			ïàëüíß èâî
+			</div>
+			<img class="photovse" src="img/product1.png" alt="ïàëüíß èâî"/>
+			<div class="zvezda"><img src="img/zvezda.png" alt="åíû ïî çàïðîñó"/><h3>åíà ïî çàïðîñó</h3></div>
+
+		</div>
+		<div class="product">
+			<div class="obram">
+			ïàëüíß èâî
+			</div>
+			<img class="photovse" src="img/product2.png" alt="ïàëüíß èâî"/>
+			<div class="zvezda"><img src="img/zvezda.png" alt="åíû ïî çàïðîñó"/><h3>åíà ïî çàïðîñó</h3></div>
+
+		</div>
+		<div class="product">
+			<div class="obram">
+			ïàëüíß èâî
+			</div>
+			<img class="photovse" src="img/product3.png" alt="ïàëüíß èâî"/>
+			<div class="zvezda"><img src="img/zvezda.png" alt="åíû ïî çàïðîñó"/><h3>åíà ïî çàïðîñó</h3></div>
+
+		</div>
+		<div class="product">
+			<div class="obram">
+			ïàëüíß èâî
+			</div>
+			<img class="photovse" src="img/product4.png" alt="ïàëüíß èâî"/>
+			<div class="zvezda"><img src="img/zvezda.png" alt="åíû ïî çàïðîñó"/><h3>åíà ïî çàïðîñó</h3></div>
+			
+		</div>
+		</div>
+		<div id="page">
+			<ul>
+				<li class="active"><a href="#">1</a></li> 
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+				<li><a href="#">6</a></li>
+				<li><span class="flip"></span></li>
+				<li><a href="#">25</a></li>
+				<li><a href="#">ëåäóþùàß</a></li>
+			</ul>
+		</div>
+	</div>
+	
+		<div style="clear:both"></div>

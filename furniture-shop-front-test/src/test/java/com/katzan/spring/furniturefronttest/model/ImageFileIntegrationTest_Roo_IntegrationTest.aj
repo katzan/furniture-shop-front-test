@@ -24,7 +24,7 @@ privileged aspect ImageFileIntegrationTest_Roo_IntegrationTest {
     declare @type: ImageFileIntegrationTest: @Transactional;
     
     @Autowired
-    private ImageFileDataOnDemand ImageFileIntegrationTest.dod;
+    ImageFileDataOnDemand ImageFileIntegrationTest.dod;
     
     @Autowired
     ImageFileRepository ImageFileIntegrationTest.imageFileRepository;

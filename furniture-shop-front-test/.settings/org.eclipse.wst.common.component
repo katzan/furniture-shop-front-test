@@ -9,6 +9,7 @@
         <wb-resource deploy-path="/css" source-path="/css"/>
         <wb-resource deploy-path="/images" source-path="/images"/>
         <wb-resource deploy-path="/img" source-path="/img"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/resources"/>
     <dependent-module archiveName="activation-1.1.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/javax/activation/activation/1.1.1/activation-1.1.1.jar">
       <dependency-type>uses</dependency-type>
     </dependent-module>

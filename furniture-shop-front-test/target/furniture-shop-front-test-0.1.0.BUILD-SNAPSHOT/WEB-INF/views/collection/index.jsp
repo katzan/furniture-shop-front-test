@@ -25,8 +25,8 @@
 									</span></span> 
 									</a></h1> 
 													
-										<h4 class="">1 цвет<br/><br/>Цена за комплект от <fmt:formatNumber  groupingUsed="true">${furCollection.collectionPrice }</fmt:formatNumber>  руб.</h4> 
-										(кровать + 2 тумбы)
+										<h4 class="">1 цвет<br/><br/>Цена за комплект по запросу <!--   от <fmt:formatNumber  groupingUsed="true">${furCollection.collectionPrice }</fmt:formatNumber>  руб.</h4> 
+										(кровать + 2 тумбы)-->
 										</td> 
 									<td class="banner-image" rowspan="2"><a href=""><img src="${pageContext.request.contextPath}/resources/img/${furCollection.smallImageFile}"/>
 										</a></td> 
@@ -50,7 +50,7 @@
 						 <a href="${pageContext.request.contextPath}/item/${furCal.id}">  
 						   <img src="${pageContext.request.contextPath}/resources/img/${furCal.smallImageFile }" alt=""  />
 						 </a>
-						<div><span> <fmt:formatNumber groupingUsed="true">${furCal.itemPrice}</fmt:formatNumber>  руб.</span></div>
+						<div> Цена по запросу <!-- <span> <fmt:formatNumber groupingUsed="true">${furCal.itemPrice}</fmt:formatNumber>  руб.</span> --></div>
 					</div>
 				 </div>
 				</c:forEach>

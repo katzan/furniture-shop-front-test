@@ -19,7 +19,7 @@
 						 <a href="${pageContext.request.contextPath}/item/${furCal.id}">  
 						   <img src="${pageContext.request.contextPath}/resources/img/${furCal.smallImageFile }" alt=""  />
 						 </a>
-						<div><span> <fmt:formatNumber groupingUsed="true">${furCal.itemPrice}</fmt:formatNumber>  руб.</span></div>
+						<!-- <div><span> <fmt:formatNumber groupingUsed="true">${furCal.itemPrice}</fmt:formatNumber>  руб.</span></div> -->
 					</div>
 				  </div>
 				</c:forEach>

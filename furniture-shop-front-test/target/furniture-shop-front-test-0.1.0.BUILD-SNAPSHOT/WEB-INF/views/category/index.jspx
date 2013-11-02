@@ -30,8 +30,10 @@
 									</span></span>
 									</a></h1>
 													
-										<h4 class="">1 цвет<br/><br/>Цена за комплект от <fmt:formatNumber groupingUsed="true"> ${furCol.collectionPrice }</fmt:formatNumber> руб.</h4>
-										(кровать + 2 тумбы)
+										<h4 class="">1 цвет<br/><br/>Цена за комплект по запросу</h4>
+										
+									
+										
 										</td>
 									<td class="banner-image" rowspan="2"><a href="${pageContext.request.contextPath}/collection/${furCol.id}"><img src="${pageContext.request.contextPath}/resources/img/${furCol.smallImageFile}"/>
 										</a></td>

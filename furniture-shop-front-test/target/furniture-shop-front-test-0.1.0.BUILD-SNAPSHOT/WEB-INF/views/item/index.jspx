@@ -7,15 +7,16 @@
 					<h4>${furnitureItem.itemName}</h4><br />
 					<div class="big_view">
 						<img src="${pageContext.request.contextPath}/resources/img/${furnitureItem.largeImageFile }" alt="" /><br />
-						<span> <fmt:formatNumber groupingUsed="true"> ${furnitureItem.itemPrice }</fmt:formatNumber> руб.</span>
+						<!-- <span> <fmt:formatNumber groupingUsed="true"> ${furnitureItem.itemPrice }</fmt:formatNumber> руб.</span> -->
+						<span>Цена: по запросу</span>
 					</div>
 					<div class="scroll">
-						<a href="#"><img src="images/pic1.jpg" alt="" width="62" height="62" /></a>
+					<!--  	<a href="#"><img src="images/pic1.jpg" alt="" width="62" height="62" /></a>
 						<a href="#"><img src="images/pic2.jpg" alt="" width="62" height="62" /></a>
 						<a href="#"><img src="images/pic3.jpg" alt="" width="62" height="62" /></a>
 						<a href="#"><img src="images/pic4.jpg" alt="" width="62" height="62" /></a>
 						<a href="#"><img src="images/pic5.jpg" alt="" width="62" height="62" /></a>
-						<a href="#"><img src="images/pic6.jpg" alt="" width="62" height="62" /></a>
+						<a href="#"><img src="images/pic6.jpg" alt="" width="62" height="62" /></a>-->
 					</div>
 				</div>
 				<div class="description">
