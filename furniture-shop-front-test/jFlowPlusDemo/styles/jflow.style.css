@@ -1,0 +1,87 @@
+/* 
+
+jFlow Plus Demo CSS 
+
+Description: Demonstation CSS for jFlow Plus
+Creator: Devin Walker
+Date: July 29, 2010
+
+
+*/
+
+#container {
+	width: 680px;
+	height: 315px;
+	position: relative;
+	border: 5px solid #FFF;
+	border-radius: 22px;	
+	margin: 0 auto;
+	-moz-box-shadow: 0 0 15px rgba(0,0,0,0.6);
+-webkit-box-shadow:  0 0 15px rgba(0,0,0,0.6);
+box-shadow: 0 0 15px rgba(0,0,0,0.6);
+position: absolute; left: 30px;
+}
+
+#slide1 span, #slide2 span, #slide3 span {
+	background: url("../images/contentBg.png") repeat top left transparent;
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	padding: 10px;
+}
+
+#slide1 h3, #slide2 h3, #slide3 h3 {
+	font-family: Georgia, serif;
+	color: #FFF;
+	font-size: 35px;
+	font-style: italic;
+	margin: 0 0 10px 0;
+}
+
+#slide1 p, #slide2 p, #slide3 p {
+	font-family: Georgia, serif;
+	color: #FFF;	
+	margin: 0;
+}
+
+.jFlowSlideContainer a {
+	color: #F90;
+	text-decoration: none;
+	font-style: italic;
+}
+
+.jFlowSlideContainer a:hover {
+	text-decoration: none;
+	border-bottom: 1px dotted white;
+}
+
+.jFlowSlideContainer a:focus {
+	position: relative;
+	top: 1px;
+}
+
+.jFlowNext div {
+	background:url("../images/arrows.png") no-repeat scroll 0 0px transparent;
+height: 28px;
+position: absolute;
+top: 115px;
+right: -25px;
+width: 21px;
+cursor: pointer; border-radius: 0px}
+
+.jFlowPrev div {
+	background:url("../images/arrows.png") no-repeat scroll -21px 0px transparent;
+height: 28px;
+position: absolute;
+top: 115px;
+left: -25px;
+width: 21px;
+cursor: pointer;
+z-index: 2000;
+display: block !important; border-radius: 0px}
+
+
+
+#mySlides img {width:668px; height:303px}
+
+#container div img {border-radius:11px;}

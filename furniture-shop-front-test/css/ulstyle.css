@@ -1,0 +1,73 @@
+#menu,
+#menu ul,
+#menu li,
+#menu a {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;}
+	#menu ul {z-index:20}
+
+
+#menu li {
+	position: relative;
+	list-style: none;
+	float: left;
+	display: block;
+}
+
+/* Links */
+
+#menu li a {
+	display: block;
+	text-decoration: none;
+	color: #FFF;
+	padding: 4px 23px;
+}
+
+#menu li:first-child a { border-left: none; }
+#menu li:last-child a{ border-right: none; }
+
+#menu li:hover > a { color: #FFF; }
+
+/* Sub Menu */
+
+#menu ul {
+position:absolute;
+	top: 26px;
+	left: 0; display:none;background:#000000;
+	border-bottom-left-radius: 2px;
+border-bottom-right-radius: 2px;
+margin-left: -1px;
+width: 130%;
+margin-right: -1px;
+opacity: 0.55
+}
+
+#menu li:hover > ul { display:block;}
+#menu ul li {
+	height: 0;
+	overflow: hidden;
+	padding: 0;
+height: 22px;
+text-shadow: 1px 1px 2px #000000; background:none;
+width: 95%;
+}
+
+#menu li:hover > ul li {
+
+	overflow: visible;
+	padding: 0;
+}
+
+#menu ul li a {
+	width: 115px;
+	margin: 0;
+	border: none;
+}
+
+#menu ul li:last-child a { border: none;}
+#menu li ul li a {padding: 3px 0; width:auto; font-size: 11px;}
+#menu li ul li a:hover { text-decoration:underline}
+#menu li ul li {box-shadow:none}
+

@@ -3,13 +3,13 @@
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
 			<ul>
-				<li><a href="#">ïàëüíè</a></li>
-				<li><a href="#">îñòèííûå</a></li>
-				<li><a href="#">åòñêèå</a></li>
-				<li><a href="#">ëåòåííàß ìåáåëü</a></li>
-				<li><a href="#">òîëîâûå</a></li>
-				<li><a href="#">ðèõîæèå</a></li>
-				<li><a href="#">àáèíåòû</a></li>
+				<li><a href="#">Спальни</a></li>
+				<li><a href="#">Гостинные</a></li>
+				<li><a href="#">Детские</a></li>
+				<li><a href="#">Плетенная мебель</a></li>
+				<li><a href="#">Столовые</a></li>
+				<li><a href="#">Прихожие</a></li>
+				<li><a href="#">Кабинеты</a></li>
 			</ul>
-			<div id="sort"><a href="#"><img src="img/sort.png" alt="îðòèðîâàòü"/></a></div>
+			<div id="sort"><a href="#"><img src="${pageContext.request.contextPath}/resources/images/sort.png" alt="Сортировать"/></a></div>
 		</div>
