@@ -49,8 +49,8 @@
 <aspect name="com.katzan.spring.furniturefronttest.model.ImageFile_Roo_Jpa_Entity"/>
 <aspect name="com.katzan.spring.furniturefronttest.repository.AboutUsRepository_Roo_Jpa_Repository"/>
 <aspect name="com.katzan.spring.furniturefronttest.model.FurnitureNews_Roo_JavaBean"/>
-<aspect name="com.katzan.spring.furniturefronttest.repository.FurnitureCategoryRepository_Roo_Jpa_Repository"/>
 <aspect name="com.katzan.spring.furniturefronttest.model.ServiceItem_Roo_JavaBean"/>
+<aspect name="com.katzan.spring.furniturefronttest.repository.FurnitureCategoryRepository_Roo_Jpa_Repository"/>
 <aspect name="com.katzan.spring.furniturefronttest.model.ShopOrder_Roo_ToString"/>
 <aspect name="com.katzan.spring.furniturefronttest.model.ImageFile_Roo_ToString"/>
 </aspects>

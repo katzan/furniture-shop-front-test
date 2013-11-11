@@ -39,6 +39,7 @@ input {
 	min-height: 100%;
 	height: auto !important;
 	height: 100%;
+	
 }
 
 
@@ -374,8 +375,11 @@ border-radius: 5px;cursor: pointer;}
 }
 #cntent {
 	padding: 0 0 0 225px;margin-top: -20px;
+
 }
 #cntent .product {margin-bottom:20px}
+
+
 /* Sidebar Left
 -----------------------------------------------------------------------------*/
 #sideLeft {
@@ -383,13 +387,21 @@ border-radius: 5px;cursor: pointer;}
 width:200px;	margin-left: -99.2%;
 	position: relative;
 	background:#d1c8c3;
-	margin-top: 57px;border-radius: 10px;
+	margin-top: 15px;border-radius: 10px;
+	text-decoration: none;
+	height: 100%
 }
 
 
-#sideLeft h3 {color:#584a45; margin-left:10px; margin-bottom: 2px;}
+#sideLeft h3 {color:#584a45; margin-left:10px; margin-bottom: 2px;font-size: 17px;}
+
+#sideLeft ul {list-style:none;font-weight: bold;font-size: 14px; }
+
+#sideLeft ul li {padding: 17px 35px 0px 18px;}
 
 #sideLeft button {}
+
+.sidebar_menu_item {text-decoration: none; margin-top: 15px; margin-left:25px;margin-bottom: 15px; width:95%; color: #584a45 }
 
 .param {float:left; margin-top: 15px; margin-left:10px;margin-bottom: 15px; width:95%; }
 .colortr {float: left;
