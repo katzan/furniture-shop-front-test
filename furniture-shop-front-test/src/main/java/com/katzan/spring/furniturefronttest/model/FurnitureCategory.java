@@ -46,4 +46,7 @@ public class FurnitureCategory implements Serializable {
    @ManyToMany(mappedBy="furnitureCategories")
    @OrderBy("listNumber ASC")
    private Set<FurnitureItem>furnitureItems;
+   
+   private String smallImageFile;
+   private String largeImageFile;
 }

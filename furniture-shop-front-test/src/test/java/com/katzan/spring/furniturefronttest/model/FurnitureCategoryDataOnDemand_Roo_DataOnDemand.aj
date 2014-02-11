@@ -31,9 +31,11 @@ privileged aspect FurnitureCategoryDataOnDemand_Roo_DataOnDemand {
         FurnitureCategory obj = new FurnitureCategory();
         setCategoryDescription(obj, index);
         setCategoryName(obj, index);
+        setLargeImageFile(obj, index);
         setMetaDescription(obj, index);
         setMetaKeywords(obj, index);
         setMetaTitle(obj, index);
+        setSmallImageFile(obj, index);
         return obj;
     }
     
@@ -51,6 +53,11 @@ privileged aspect FurnitureCategoryDataOnDemand_Roo_DataOnDemand {
             categoryName = categoryName.substring(0, 200);
         }
         obj.setCategoryName(categoryName);
+    }
+    
+    public void FurnitureCategoryDataOnDemand.setLargeImageFile(FurnitureCategory obj, int index) {
+        String largeImageFile = "largeImageFile_" + index;
+        obj.setLargeImageFile(largeImageFile);
     }
     
     public void FurnitureCategoryDataOnDemand.setMetaDescription(FurnitureCategory obj, int index) {
@@ -75,6 +82,11 @@ privileged aspect FurnitureCategoryDataOnDemand_Roo_DataOnDemand {
             metaTitle = metaTitle.substring(0, 200);
         }
         obj.setMetaTitle(metaTitle);
+    }
+    
+    public void FurnitureCategoryDataOnDemand.setSmallImageFile(FurnitureCategory obj, int index) {
+        String smallImageFile = "smallImageFile_" + index;
+        obj.setSmallImageFile(smallImageFile);
     }
     
     public FurnitureCategory FurnitureCategoryDataOnDemand.getSpecificFurnitureCategory(int index) {

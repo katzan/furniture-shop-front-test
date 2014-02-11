@@ -7,7 +7,7 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 import org.hibernate.validator.constraints.NotEmpty;
-
+/**This class is not a separate class **/
 @Embeddable
 public class Address implements Serializable {
 

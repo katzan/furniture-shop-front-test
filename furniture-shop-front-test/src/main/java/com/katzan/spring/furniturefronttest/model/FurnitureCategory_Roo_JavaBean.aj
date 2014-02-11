@@ -75,4 +75,20 @@ privileged aspect FurnitureCategory_Roo_JavaBean {
         this.furnitureItems = furnitureItems;
     }
     
+    public String FurnitureCategory.getSmallImageFile() {
+        return this.smallImageFile;
+    }
+    
+    public void FurnitureCategory.setSmallImageFile(String smallImageFile) {
+        this.smallImageFile = smallImageFile;
+    }
+    
+    public String FurnitureCategory.getLargeImageFile() {
+        return this.largeImageFile;
+    }
+    
+    public void FurnitureCategory.setLargeImageFile(String largeImageFile) {
+        this.largeImageFile = largeImageFile;
+    }
+    
 }

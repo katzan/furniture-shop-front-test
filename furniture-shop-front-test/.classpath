@@ -71,5 +71,6 @@
 	<classpathentry kind="var" path="M2_REPO/org/apache/tiles/tiles-template/2.2.2/tiles-template-2.2.2.jar" sourcepath="M2_REPO/org/apache/tiles/tiles-template/2.2.2/tiles-template-2.2.2-sources.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
 	<classpathentry kind="con" path="org.eclipse.ajdt.core.ASPECTJRT_CONTAINER"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/solr/solr-solrj/4.1.0/solr-solrj-4.1.0.jar" sourcepath="M2_REPO/org/apache/solr/solr-solrj/4.1.0/solr-solrj-4.1.0-sources.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

@@ -10,6 +10,11 @@ import org.springframework.web.context.request.WebRequestInterceptor;
 import com.katzan.spring.furniturefronttest.repository.FurnitureCategoryRepository;
 import com.katzan.spring.furniturefronttest.repository.FurnitureItemRepository;
 
+/**
+ * This class designed to provide views with common information as categories and so on.
+ * @author Alex
+ *
+ */
 public class CommonDataInterceptor implements WebRequestInterceptor,
 		WebBindingInitializer {
 	

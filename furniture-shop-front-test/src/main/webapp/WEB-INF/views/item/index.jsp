@@ -1,42 +1,32 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" xmlns:util="urn:jsptagdir:/WEB-INF/tags/util" xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:fmt="http://java.sun.com/jsp/jstl/fmt" version="2.0">
-  <jsp:directive.page contentType="text/html;charset=UTF-8"/>
-  <jsp:output omit-xml-declaration="yes"/>
-<div id="main_block" class="style1">																																																																													
-				<div id="item">
-					<h4>${furnitureItem.itemName}</h4><br />
-					<div class="big_view">
-						<img src="${pageContext.request.contextPath}/resources/img/${furnitureItem.largeImageFile }" alt="" /><br />
-						<!-- <span> <fmt:formatNumber groupingUsed="true"> ${furnitureItem.itemPrice }</fmt:formatNumber> руб.</span> -->
-						<span>Цена: по запросу</span>
-					</div>
-					<div class="scroll">
-					<!--  	<a href="#"><img src="images/pic1.jpg" alt="" width="62" height="62" /></a>
-						<a href="#"><img src="images/pic2.jpg" alt="" width="62" height="62" /></a>
-						<a href="#"><img src="images/pic3.jpg" alt="" width="62" height="62" /></a>
-						<a href="#"><img src="images/pic4.jpg" alt="" width="62" height="62" /></a>
-						<a href="#"><img src="images/pic5.jpg" alt="" width="62" height="62" /></a>
-						<a href="#"><img src="images/pic6.jpg" alt="" width="62" height="62" /></a>-->
-					</div>
-				</div>
-				<div class="description">
-					<p>
-						<strong>Описание:</strong><br /> 
-						${furnitureItem.itemDescription } 
-					</p>
-				
-					<p>
-					   <strong>Материал:</strong><br/>
-					   ${furnitureItem.materials }
-					</p>
-					<p>
-					   <strong>Размеры:</strong><br/>
-					   ${furnitureItem.dimensions}
-					
-					</p>
-					<p>
-						<!-- <a href="#" class="view">View</a> --><a href="${pageContext.request.contextPath}/cart/add/${furnitureItem.id }" class="buy">В корзину</a>
-					</p>
-				</div>
-			</div>
+<%@include file="../../layouts/init.jsp" %>
+<%@ page language="java" contentType="text/html;charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<p>
+  <div id="cont">
+	 <div id="podrinfo">
+	 <div id="bigphoto"><div id="big"><img src="http://mebelvopt.ru/resources/img/${furnitureItem.largeImageFile }" alt="${furnitureItem.itemName}"/></div></div>
+	 <div id="infoprod"><h2 class="hv">${furnitureItem.itemName}</h2>
+	 <div class="infpr">
+	 <p class="inftab"><span>Артикул:</span></p>
+	 <p class="nazvinf"><span>${furnitureItem.codeNumber }</span></p>
+	 <p class="inftab"><span>Основной материал:</span></p>
+	 <p class="nazvinf"><span>${furnitureItem.materials }</span></p>
+	 <p class="inftab"><span>Размеры:</span></p>
+	 <p class="nazvinf"><span>${furnitureItem.dimensions}</span></p>
+	 <p class="inftab"><span>Основной цвет:</span></p>
+	 <div id="colorprod"><div class="color"><div class="br1"></div></div><div class="color"><div class="br2"></div></div></div>
+	 <div style="clear:both"></div>
+	 <p class="inftab"><span>Другой цвет:</span></p>
+	 <p class="nazvinf"><span>отсутствует</span></p>
+ 	 <p class="inftab"><span>Цена (розница):</span></p>
+	 <p class="nazvinf"><span><fmt:formatNumber>${furnitureItem.itemPrice }</fmt:formatNumber> руб.  </span></p>
+	<div id="otpravka1" class="pri"><a href="${pageContext.request.contextPath}/cart/add/${furnitureItem.id }"><button>Отложить</button></a></div>
+
+
+	 </div></div>
+	 <div style="clear:both"></div>
+	 <div id="opisanie"><h2 style="margin-bottom:10px">Описание товара:</h2>
+	 <div class="inform2 brtl">${furnitureItem.itemDescription } </div></div>
+	 </div>
+	 	 		<div style="clear:both"></div>
 </div>

@@ -11,6 +11,12 @@
     <put-attribute name="menu" value="/WEB-INF/views/menu.jsp" />
     <put-attribute name="footer" value="/WEB-INF/views/footer.jsp" />
   </definition>
+  
+  <definition name="defaultnomenu" template="/WEB-INF/layouts/default.jsp">
+    <put-attribute name="header" value="/WEB-INF/views/header.jsp" />
+    <put-attribute name="messages" value="/WEB-INF/views/messages.jsp"/>
+    <put-attribute name="footer" value="/WEB-INF/views/footer.jsp" />
+  </definition>
 
   <definition name="public" template="/WEB-INF/layouts/default.jspx">
     <put-attribute name="header" value="/WEB-INF/views/header.jspx" />

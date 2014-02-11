@@ -55,7 +55,8 @@ input {
 -----------------------------------------------------------------------------*/
 #content {
 	padding: 0 0 50px;
-margin-top:30px}
+	margin-top:30px
+}
 
 
 
@@ -84,8 +85,14 @@ font-weight: bold; line-height: 53px; color:#584a45}
 margin-bottom: 6px;}
 
 
-#searchform {border-radius: 2px;
-    border: 1px solid #584a45; width:178px; background:#b1a39b; height: 26px; margin-right: 3px}
+#searchform {
+	border-radius: 2px;
+    border: 1px solid #584a45; 
+    width:178px; 
+    background:#b1a39b; 
+    height: 26px; 
+    margin-right: 3px
+}
 
 #searchcl {margin: 3px}
 .maia-button {border: 0px;
@@ -98,9 +105,11 @@ height: 28px; font-weight:bold}
 #zvonok {float:right; margin-right: 7px; margin-top:25px;}
 #logozvonok img {width:57px;
 float: left; display:block}
-#rv a.rh {color:#392f2c}
+#rv a.rh {color:#392f2c;
+			float: right;
+		 }
 #rv a.rh, a.vh {font-size:19px;}
-#rv span:after {content:'|'}
+/* --- #rv span:after {content:'|'} ---*/
 #rv span {margin-left:6px; margin-right:6px; font-size:19px}
 #palkaheader {float: right;
 margin-bottom: 13px;
@@ -178,30 +187,52 @@ top:10px; padding-left:5px; text-transform:uppercase;box-shadow: 3px 0px 5px 0px
 .pop span { color: #FFFFFF;
 text-shadow: #000000 1px 1px 2px;}
 
-.l1 {width: 71px;
+.l1 {width: 105px;
 background: #fc6601;}
 .l2 {width: 95px; background: #febf01}
 .l3 {width: 52px; background: #fa2b10}
 
 
 
-.photovse {width: 175px;
-margin: 0px 6px 6px 6px;
-height: 127px;
-border-bottom-left-radius: 10px;
-border-bottom-right-radius: 10px;}
+
+
+.productBox {
+	float: left;
+	height: 185px;
+	width: 185px;
+	position: relative;
+	margin: 20px 14px 40px 14px;
+}
 
 .product {border: 5px solid #fff;
 float: left;
-margin: 20px 14px 5px 14px;
+
 box-shadow: 4px 4px 23px -2px;
 border-radius: 22px;
-height: 155px;
+height: 180px;
 background: #392f2c;
-width: 187px; position:relative;}
+width: 181px; position: relative;}
 
-.obram {color:#FFFFFF;padding-left: 10px;
-padding-top: 3px;}
+
+.photovse {
+	height: 170px;
+	width: 170px;
+	border-radius: 10px;
+	display: block;
+	margin-top:5px;
+	margin-bottom:auto;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+}
+
+.obram {
+	color:black;
+	padding-left: 10px;
+	padding-top: 3px;
+	margin: 20px 20px;
+	font-weight:bold;
+}
 
 
 
@@ -210,17 +241,18 @@ left: 125px;}
 .zvezda img {width: 74px; height:74px;}
 
 .zvezda h3 {position: absolute;
-top: 24px;
-left: 12px;
-font-size: 12px;
-color: #FFF;
-line-height: 12px;}
+	top: 24px;
+	left: 12px;
+	font-size: 12px;
+	color: #FFF;
+	line-height: 12px;
+}
 
 
 
 #otpravka {margin: 0 0 0 15px;
 float: left; border:none; border-radius: 5px;cursor: pointer;}
-#otpravka button {background: url(img/otpravit.png) no-repeat center center;
+#otpravka button {background: url(/resources/images/otpravit.png) no-repeat center center;
 width: 240px;
 height: 40px;
 float: left;
@@ -253,7 +285,12 @@ padding-left: 10px; float:left}
 #footerinfo span:after {content: '/'; font-size:14px}
 #footerinfo span {padding-left: 5px;
 padding-right: 5px}
-#artniz img {width: 900px; float: left}
+#artniz img {
+	width: 900px; 
+	float: left;
+	margin-top: 7px;
+	margin-bottom: 7px;
+}
 
 
 /*----------------------2PAGE-------------------------------*/
@@ -269,7 +306,11 @@ margin-right:3px}
 
 
 
-.prdct {float:left; margin-bottom:35px}
+.prdct {
+	float:left; 
+	margin-bottom:35px;
+	margin-top: 20px;
+	}
 .prodphoto {border: 4px solid #FFF;
 border-radius: 15px; float:left;
 -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
@@ -315,7 +356,10 @@ border-radius: 8px;
 
 #infoprod {float:left;padding-left: 65px;}
 
-#podrinfo {margin-left: 13px;}
+#podrinfo {
+	margin-left: 13px;
+	margin-top:20px;
+}
 .inftab, .nazvinf{
 font-size: 16px;}
 .inftab { margin:0 0 12px; color: #524540}
@@ -344,7 +388,7 @@ float: left;
 border: none;
 border-radius: 5px;
 cursor: pointer;}
-#otpravka1 button {background: url(img/otpravit.png) no-repeat center center;
+#otpravka1 button {background: url(/resources/images/otpravit.png) no-repeat center center;
 width: 125px;
 height: 31px;
 float: left;
@@ -357,7 +401,11 @@ border-radius: 5px;cursor: pointer;}
 #otpravka1 button {color:#FFFFFF}
 
 .brtl {width:530px;}
-#opisanie {float:left; margin-top:-55px;margin-bottom: 20px;}
+#opisanie {
+	float:left; 
+	
+	margin-bottom: 20px;
+}
 
 #opisanie h2 {color:#392f2c}
 
@@ -374,7 +422,7 @@ border-radius: 5px;cursor: pointer;}
 	margin-bottom: 70px;
 }
 #cntent {
-	padding: 0 0 0 225px;margin-top: -20px;
+	padding: 0 0 0 225px;margin-top: 20px;
 
 }
 #cntent .product {margin-bottom:20px}
@@ -417,7 +465,11 @@ box-shadow: 0 0 15px rgba(0,0,0,1.5);}
 
 .colortr .br1, .colortr .br2 {width:30px; height:20px}
 .colorprod {}
-#contact {margin-left:20px; float:left}
+#contact {
+	margin-left:20px; 
+	float:left;
+	margin-top: 20px;
+	}
 .infocomp {margin-top:10px;}
 .infocomp p {margin: 0 0 17px}
 
@@ -446,7 +498,7 @@ border: none;
 border-radius: 5px;
 cursor: pointer;}
 
-#otpravka.bl button {background: url(img/otpravit.png) no-repeat center center;
+#otpravka.bl button {background: url(/resources/images/otpravit.png) no-repeat center center;
 width: 168px;
 height: 31px;
 float: right;
@@ -469,7 +521,7 @@ width: 18px;
 height: 18px;
 display: inline-block;
 cursor: pointer;
-background: url(img/checkbox.png);float:left; margin-left: 20px;
+background: url(/resources/images/checkbox.png);float:left; margin-left: 20px;
 }
 .niceCheck input {
 display: none; 
@@ -483,7 +535,7 @@ float: right;
 border: none;
 border-radius: 5px;
 cursor: pointer;}
-#otpravka.b2 button {background: url(img/otpravit.png) no-repeat center center;
+#otpravka.b2 button {background: url(/resources/images/otpravit.png) no-repeat center center;
 width: 165px;
 height: 50px;
 float: right;

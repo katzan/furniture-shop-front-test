@@ -3,16 +3,21 @@
   <jsp:directive.page contentType="text/html;charset=UTF-8"/>
   <jsp:output omit-xml-declaration="yes"/>
   <spring:message code="label_contact_index" htmlEscape="false" var="title"/>
-  <!--<util:panel id="title" title="${title}">
-    <spring:message code="application_name" htmlEscape="false" var="app_name"/>
-    <h3>
-      <spring:message arguments="${app_name}" code="welcome_titlepane"/>
-    </h3>
-    </util:panel>-->
-      <c:forEach items="${contacts}" var="contactItem">
-        <div class="contact_item">			
-					<p> ${contactItem.description}</p>
-					
+  
+ 	<div id="contact"><span><h2 class="hv" style="font-size: 22px;">Наши контакты:</h2></span>
+		<div class="infocomp"><p><span class="pr">aдрес:</span> <span class="hr">г.Долгопрудный, ул.Жуковского д.3</span></p>
+		<p><span class="pr">тел.:</span> <span class="hr">8-(495)-999-12-09</span></p>
+		<p><span class="pr">e-mail:</span> <span class="hr">info@mebelvopt.ru</span></p>
+		
 		</div>
-    </c:forEach>
+	</div>
+		
+		<div style="clear:both"></div>
+	<div id="map" class="maper"><h2>Схема проезда:</h2>
+			<div id="ndex"><img src="/resources/images/map.png" alt="Схема проезда"/></div>
+			<div style="clear:both"></div>
+			<div id="ist" class="maper"><h3>Источник: Яндекс Карты</h3></div>
+	
+	</div>
+ 
 </div>
