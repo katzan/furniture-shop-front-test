@@ -74,4 +74,8 @@
             </props>
         </property>
     </bean>
+       <bean class="org.apache.solr.client.solrj.impl.HttpSolrServer" id="solrServer">
+               <constructor-arg value="${solr.serverUrl}"/>
+                      <!-- <constructor-arg index="0" value="http://localhost:8983/solr/collection1"/>-->
+     </bean>
 </beans>
