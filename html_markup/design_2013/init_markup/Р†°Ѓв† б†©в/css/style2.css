@@ -1,0 +1,134 @@
+
+
+.settings { width:175px;}
+.settings a {text-decoration:none}
+
+/*---------------------------
+Button Default
+---------------------------*/
+
+.button1, .button2, .button3 { 
+padding: 4px 0px;    border:1px solid #635a57;
+    display:block;
+    border-radius:4px;
+    -moz-border-radius:4px;
+    font-weight:700;
+    color:#392f2c;
+    box-shadow:0 1px 2px rgba(0,0,0,0.15);
+	background:#FFF;
+	background: -moz-linear-gradient(top, #FFF, #d1c8c3); 
+    background: -webkit-linear-gradient(top, #FFF, #d1c8c3);
+    background: -o-linear-gradient(top, #FFF, #d1c8c3); 
+    background: -ms-linear-gradient(top, #FFF, #d1c8c3); 
+    background: linear-gradient(top, #FFF, #d1c8c3);
+    position:relative;
+    cursor:pointer;
+}
+
+.button1 span.txt, .button2 span.txt, .button3 span.txt {
+    height:16px;
+    padding:0 0 0 22px;
+    display:block;
+    line-height:16px;
+    line-height:15px\9; /* Dirty IE Hack */
+}
+
+.button1 span.ar, .button2 span.ar, .button3 span.ar {
+    font-size:10px;
+    position:absolute;
+    top: 3px; right:5px;
+}
+
+/*---------------------------
+Button Effects (hover/active)
+---------------------------*/
+
+.button1:hover, .button2:hover, .button3:hover {
+color:#392f2c;
+    background: #FFFFFF;
+	background: -moz-linear-gradient(top, #FFF, #d1c8c3); 
+    background: -webkit-linear-gradient(top, #FFF, #d1c8c3);
+    background: -o-linear-gradient(top, #FFF, #d1c8c3); 
+    background: -ms-linear-gradient(top, #FFF, #d1c8c3); 
+    background: linear-gradient(top, #FFF, #d1c8c3);
+
+}
+
+.button1:active, .button1.active, .button2:active, .button2.active, .button3:active, .button3.active {
+color:#392f2c;
+    border-color:#635a57;
+    box-shadow:inset 0 1px 2px #d2d4e3;
+    background: #FFFFFF;
+	background: -moz-linear-gradient(top, #FFF, #d1c8c3); 
+    background: -webkit-linear-gradient(top, #FFF, #d1c8c3);
+    background: -o-linear-gradient(top, #FFF, #d1c8c3); 
+    background: -ms-linear-gradient(top, #FFF, #d1c8c3); 
+    background: linear-gradient(top, #FFF, #d1c8c3);
+	text-decoration:none;
+
+}
+
+.button1.active, .button2.active, .button3.active {  border-radius:4px 4px 0 0; -moz-border-radius:4px 4px 0 0; border-bottom:0; }
+
+.button1:hover span.txt, .button1:active span.txt, .button1.active span.txt, .button2:hover span.txt, .button2:active span.txt, .button2.active span.txt, .button3:hover span.txt, .button3:active span.txt, .button3.active span.txt { background-position:0 -15px; text-decoration:none}
+
+/*---------------------------
+Button Menu
+---------------------------*/
+
+.menc1, .menc2, .menc3 {
+    position:absolute;
+    top:23px;
+    left:0;
+    right:0;
+    background:#D5CFCB;
+    border-radius:0 0 3px 3px;
+    -moz-border-radius:0 0 3px 3px;
+    border:1px solid #635a57;
+    border-top:0;
+    border-bottom-color:#b3b7c0;
+    box-shadow:0 1px 2px rgba(0,0,0,0.15);
+    display:none;
+    z-index:40000;
+}
+
+.menc1 ul, .menc2 ul, .menc3 ul { list-style:none; padding-top:3px; }
+
+.menc1 ul li, .menc2 ul li, .menc3 ul li { display:block; zoom:1; }
+
+.menc1 ul li a, .menc2 ul li a, .menc3 ul li a { 
+    padding:3px 10px;
+    font-size:11px;
+    border-top:1px solid #635a57;
+    border-bottom:1px solid #635a57;
+    display:block;
+    margin:-1px 0 0 0;
+    position:relative;
+    text-shadow:0 1px 1px #fff;
+    zoom:1;
+}
+
+.menc1 ul li a span, .menc2 ul li a span, .menc3 ul li a span {
+    position:absolute;
+    bottom:-1px;
+    left:0; right:0;
+    height:1px;
+    display:block;
+    z-index:20;
+    display:none;
+    zoom:1;
+}
+
+/*---------------------------
+Button Menu li hover
+---------------------------*/
+
+.menc1 ul li:hover a, .menc2 ul li:hover a, .menc3 ul li:hover a {
+    border-color:#635a57;
+    color:#3f586c;
+    background: #D1C9C4;
+}
+
+.menc1 ul li:hover a span, .menc2 ul li:hover a span, .menc3 ul li:hover a span {
+    display:block;
+}

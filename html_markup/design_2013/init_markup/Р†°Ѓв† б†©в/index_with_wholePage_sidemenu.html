@@ -1,0 +1,368 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title></title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen, projection" />
+	<link href="ulstyle.css" type="text/css" rel="stylesheet"/>
+	<link href="css/style.css" type="text/css" rel="stylesheet"/>
+<link href="jFlowPlusDemo/styles/styler.css" type="text/css" rel="stylesheet"/>
+<link href="jFlowPlusDemo/styles/jflow.style.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="jquery/1.4.2/jquery.min.js"></script>
+<script src="jFlowPlusDemo/scripts/jflow.plus.js" type="text/javascript"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+	    $("#myController").jFlow({
+			controller: ".jFlowControl", // must be class, use . sign
+			slideWrapper : "#jFlowSlider", // must be id, use # sign
+			slides: "#mySlides",  // the div where all your sliding divs are nested in
+			selectedWrapper: "jFlowSelected",  // just pure text, no sign
+			width: "668px",  // this is the width for the content-slider
+			height: "303px",  // this is the height for the content-slider
+			duration: 400,  // time in miliseconds to transition one slide
+			prev: ".jFlowPrev", // must be class, use . sign
+			next: ".jFlowNext", // must be class, use . sign
+			auto: true	
+    });
+});
+</script>
+    <script src="js/custom.js" type="text/javascript"></script> 
+	<script type="text/javascript">
+jQuery(document).ready(function(){
+
+jQuery(".niceCheck").mousedown(
+/* при клике на чекбоксе меняем его вид и значение */
+function() {
+
+     changeCheck(jQuery(this));
+     
+});
+
+
+jQuery(".niceCheck").each(
+/* при загрузке страницы нужно проверить какое значение имеет чекбокс и в соответствии с ним выставить вид */
+function() {
+     
+     changeCheckStart(jQuery(this));
+     
+});
+
+                                        });
+
+function changeCheck(el)
+/* 
+	функция смены вида и значения чекбокса
+	el - span контейнер дял обычного чекбокса
+	input - чекбокс
+*/
+{
+     var el = el,
+          input = el.find("input").eq(0);
+   	 if(!input.attr("checked")) {
+		el.css("background-position","0 -18px");	
+		input.attr("checked", true)
+	} else {
+		el.css("background-position","0 0");	
+		input.attr("checked", false)
+	}
+     return true;
+}
+
+function changeCheckStart(el)
+/* 
+	если установлен атрибут checked, меняем вид чекбокса
+*/
+{
+var el = el,
+		input = el.find("input").eq(0);
+      if(input.attr("checked")) {
+		el.css("background-position","0 -18px");	
+		}
+     return true;
+}
+
+</script>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+</head>
+
+<body>
+
+<div id="wrapper">
+
+	<div id="header">
+		<div id="logo"><a href="#"><img src="img/logo.png" alt="Главная страница" /></a></div>
+		<div id="poisk"><form method="get" action="/search">
+		<span>Поиск на сайте:</span>
+		<input name="search" value="" type="text" id="searchform"/>
+		<button class="maia-button"><div id="searchcl">Поиск</div></button></form></div>
+		
+		<div id="zvonok">
+			<div id="logozvonok"><img src="img/tel.png" alt="Телефон"/>
+				<span class="nomer">8(495)999-12-09</span>
+			</div>
+			<div id="rv"><a class="rh" href="#">Зарегистрироваться</a><span></span><a class="vh" href="#">Войти</a></div>
+		</div>
+		<div id="palkaheader"><img src="img/art.png" alt=""/></div>
+		<div id="fmenu">
+			<ul id="menu">
+				<li><a href="#">Главная</a></li>
+				<li><a href="#">О нас</a>
+					<ul>
+						<li><a href="#">наши достижения</a></li>
+						<li><a href="#">наши партнеры</a></li>
+						<li><a href="#">отзывы о нас</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Каталог мебели</a></li>
+				<li><a href="#">Полезная информация</a></li>
+				<li><a href="#">Новости</a></li>
+				<li><a href="#">Контакты</a></li>			
+			</ul>
+		</div>
+		<div style="clear:both"></div>
+	</div><!-- #header-->
+
+	<div id="content">
+
+		<div id="slider">
+<div id="container">
+<div id="mySlides">
+    <div id="slide1">    
+        <img src="jFlowPlusDemo/images/slide1.jpg" alt="Slide 1 jFlow Plus" />
+	</div>    	
+    <div id="slide2">
+        <img src="jFlowPlusDemo/images/slide1.jpg" alt="Slide 2 jFlow Plus" />
+    </div>   
+	<div id="slide3">
+        <img src="jFlowPlusDemo/images/slide1.jpg" alt="Slide 3 jFlow Plus" />
+    </div>
+</div>
+
+<div id="myController">
+   <span class="jFlowControl"></span>
+   <span class="jFlowControl"></span>
+   <span class="jFlowControl"></span>
+</div>
+
+<span class="jFlowPrev"><div></div></span>
+<span class="jFlowNext"><div></div></span>
+</div>
+</div><!-- #slider-->
+
+		<div style="clear:both;margin-bottom: 25px;"></div>
+		
+		<div id="soderjimoe"><p>Добро пожаловать на сайт MebelVopt.ru!</p> 
+<p>Наша компания родилась как компания-перевозчик и долгое время мы помогали 
+нашим партнёрам в доставке их груза. Мы много думали, изучали и теперь мы 
+занимаемся не только перевозками, но и поставками мебели в Россию. </p>
+<p>Мы - оптовая компания по поставке качественной мебели из Китая, Малайзии, 
+Вьетнама. Наша работа – помогать нашим партнерам в развитии Российского 
+рынка экспортной мебели. Мы сотрудничаем с крупнейшими производителями
+мебели в Китае, которые делают качественные аналоги европейской мебели. 
+Нашими основными условиями для сотрудничества с фабрикой являются: 
+высокое качество, которое мы можем гарантировать нашим партнерам в России, 
+отлаженная система поставки, приемлемая цена. </p>
+<p>Поэтому работать с нами надежно, просто и выгодно.</p></div>
+		<div id="forma">
+			<h2>Сделайте первый шаг:</h2>
+			<form id="formavhoda" action="URL">
+				<div class="sforma">
+					<div class="spanforma"><span>Имя:</span></div> 
+					<div class="spaninput"><input name="name" value="" type="text" class="inputpole"/></div>
+				</div>
+				<div class="sforma">
+					<div class="spanforma"><span>Телефон:</span></div>
+					<div class="spaninput"><input name="name" value="" type="text" class="inputpole"/></div>
+				</div>
+				<div class="sforma">
+					<div class="spanforma"><span>E-mail:</span></div> 
+					<div class="spaninput"><input name="name" value="" type="text" class="inputpole"/></div>
+				</div>
+				<div id="otpravka"><button>Отправить заявку</button></div>
+			</form>
+		</div>
+		<div style="clear:both; margin-bottom:20px"></div>
+		<div id="product1">
+			<div class="trproduct">
+				<img src="img/struktyra_glavnaya_1.png" alt="Новинки"/>
+				<div class="pop l1"><span>Новинки</span></div>
+			</div>
+			<div class="trproduct">
+				<img src="img/struktyra_glavnaya_2.png" alt="Популярные"/>
+				<div class="pop l2"><span>Популярные</span></div>
+			</div>
+			<div class="trproduct">
+				<img src="img/struktyra_glavnaya_3.png" alt="Акции"/>
+				<div class="pop l3"><span>Акции</span></div>
+			</div>
+		</div>
+		<div style="clear:both"></div>
+	<div id="vse"><a class="hv" href="#"><h2 style="margin-left: 10px;">Вся мебель:</h2></a>
+		<div style="clear:both"></div>
+		<div class="prod">
+		<div class="product">
+			<div class="obram">
+			Спальня Виво
+			</div>
+			<img class="photovse" src="img/product1.png" alt="Спальня Виво"/>
+			<div class="zvezda"><img src="img/zvezda.png" alt="Цены по запросу"/><h3>Цена по запросу</h3></div>
+
+		</div>
+		<div class="product">
+			<div class="obram">
+			Спальня Виво
+			</div>
+			<img class="photovse" src="img/product2.png" alt="Спальня Виво"/>
+			<div class="zvezda"><img src="img/zvezda.png" alt="Цены по запросу"/><h3>Цена по запросу</h3></div>
+
+		</div>
+		<div class="product">
+			<div class="obram">
+			Спальня Виво
+			</div>
+			<img class="photovse" src="img/product3.png" alt="Спальня Виво"/>
+			<div class="zvezda"><img src="img/zvezda.png" alt="Цены по запросу"/><h3>Цена по запросу</h3></div>
+
+		</div>
+		<div class="product">
+			<div class="obram">
+			Спальня Виво
+			</div>
+			<img class="photovse" src="img/product4.png" alt="Спальня Виво"/>
+			<div class="zvezda"><img src="img/zvezda.png" alt="Цены по запросу"/><h3>Цена по запросу</h3></div>
+			
+		</div>
+		</div>
+		<div id="page">
+			<ul>
+				<li class="active"><a href="#">1</a></li> 
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+				<li><a href="#">6</a></li>
+				<li><span class="flip"></span></li>
+				<li><a href="#">25</a></li>
+				<li><a href="#">Следующая</a></li>
+			</ul>
+		</div>
+	</div>
+	
+		<div style="clear:both"></div>
+	</div><!-- #content-->
+	
+	
+	<div class="sidebar" id="sideLeft">
+			<div class="param"><h3>Стиль мебели</h3>
+			<div class="settings">
+                <a href="#" class="button1">
+                    <span class="txt">Все стили</span><span class="ar">&#9660;</span>                </a>
+                <div class="menc1">
+                    <ul>
+                        <li><a href="#">А</a></li>
+                        <li><a href="#">Б</a></li>
+                        <li><a href="#">В</a></li>
+                        <li><a href="#">Г</a></li>
+                    </ul>
+                </div>
+            </div>
+			</div>
+			<div class="param"><h3 class="nast">Категория</h3>
+			<span class="niceCheck"><input type="checkbox" name="ch1" /></span> <span class="nazvcheck">спальни</span>
+			<div style="clear:both"></div>
+			<span class="niceCheck"><input type="checkbox" name="ch1" /></span> <span class="nazvcheck">гостинные</span>
+			<div style="clear:both"></div>
+			<span class="niceCheck"><input type="checkbox" name="ch1" /></span> <span class="nazvcheck">детские</span>
+			<div style="clear:both"></div>
+			<span class="niceCheck"><input type="checkbox" name="ch1" /></span> <span class="nazvcheck">плетённая мебель</span>
+			<div style="clear:both"></div>
+			<span class="niceCheck"><input type="checkbox" name="ch1" /></span> <span class="nazvcheck">столовые</span>
+			<div style="clear:both"></div>
+			<span class="niceCheck"><input type="checkbox" name="ch1" /></span> <span class="nazvcheck">прихожие</span>
+			<div style="clear:both"></div>
+			<span class="niceCheck"><input type="checkbox" name="ch1" /></span> <span class="nazvcheck">кабинеты</span>			</div>
+			<div class="param"><h3 class="nast">Назначение</h3>
+			<div class="settings">
+                <a href="#" class="button2">
+                    <span class="txt">Все назначения</span><span class="ar">&#9660;</span>                </a>
+                <div class="menc2">
+                    <ul>
+                        <li><a href="#">А1</a></li>
+                        <li><a href="#">Б1</a></li>
+                        <li><a href="#">В1</a></li>
+                        <li><a href="#">Г1</a></li>
+                    </ul>
+                </div>
+			</div>
+			</div>
+
+			<div class="param"><h3 class="nast">Цвет</h3>
+			<div id="colorprod">
+			<div class="colortr"><div class="br1"></div></div>
+			<div class="colortr"><div class="br2"></div></div>
+			<div class="colortr"><div class="br1"></div></div>
+			<div class="colortr"><div class="br2"></div></div>
+			<div class="colortr"><div class="br1"></div></div>
+			<div class="colortr"><div class="br2"></div></div>
+			</div></div>
+			<div class="param"><h3 class="nast">Материал</h3>
+			<div class="settings">
+                <a href="#" class="button3">
+                    <span class="txt">Любой материал</span><span class="ar">&#9660;</span>                </a>
+                <div class="menc3">
+                    <ul>
+                        <li><a href="#">А2</a></li>
+                        <li><a href="#">Б2</a></li>
+                        <li><a href="#">В2</a></li>
+                        <li><a href="#">Г2</a></li>
+                    </ul>
+                </div>
+            </div>
+			</div>
+			<div class="param spat"><h3 class="nast">Цена</h3>
+			<span style="margin-left:10px">от</span>
+			<div class="settings price">
+                <a href="#" class="button2 tk">
+                    <span class="txt"></span><span class="ar">&#9660;</span>                </a>
+                <div class="menc2">
+                    <ul>
+                        <li><a href="#">А1f</a></li>
+                        <li><a href="#">Б1f</a></li>
+                        <li><a href="#">В1f</a></li>
+                        <li><a href="#">Г1f</a></li>
+                    </ul>
+                </div>
+			</div>
+			<span>до</span>
+			<div class="settings price">
+                <a href="#" class="button2 tk">
+                    <span class="txt"></span><span class="ar">&#9660;</span>                </a>
+                <div class="menc2">
+                    <ul>
+                        <li><a href="#">А1a</a></li>
+                        <li><a href="#">Б1a</a></li>
+                        <li><a href="#">В1a</a></li>
+                        <li><a href="#">Г1a</a></li>
+                    </ul>
+                </div>
+			</div>
+			<span>руб.</span>			</div>
+			
+
+			<div id="otpravka" class="b2"><button>Применить фильтр</button></div>
+		</div>
+		<!-- .sidebar#sideLeft -->
+
+</div><!-- #wrapper -->
+
+<div id="footer">
+	<div id="footerinfo">Оптовая компания по поставке мебели в Россию MebelVopt.ru  <span></span>  тел: 8 (495) 999-12-09  <span></span>  email: info@mebelvopt.ru  <span></span> г.Долгопрудный, ул.Жуковского д.3 </div>
+	<div id="artniz"><img src="img/artn.png" alt=""/></div>
+	</div>
+<!-- #footer -->
+<img id="imgBg" src="img/bgfonv.png" alt="" />
+<img id="imgBg1" src="img/bgfonn.png" alt="" />
+</body>
+</html>
