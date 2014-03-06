@@ -313,9 +313,38 @@ height: 363px;
 border-radius: 8px;
 }
 
-#infoprod {float:left;padding-left: 65px;}
+#bigphotocat {border: 4px solid #FFF;
+border-radius: 20px;
+-moz-box-shadow: 0 0 15px rgba(0,0,0,0.5);
+-webkit-box-shadow: 0 0 15px rgba(0,0,0,0.5);
+box-shadow: 0 0 15px rgba(0,0,0,0.5);
+width:423px; height: 302px; float:left}
+#bigcat {border-radius: 16px;
+border: 6px solid #392f2c;
+height: 293px;}
 
+#bigcat img {
+width: 414px;
+height: 293px;
+border-radius: 8px;
+}
+
+#infoprod {
+	float:left;
+	padding-left: 65px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	}
+#prodcont {
+	margin: 0 auto;
+}
 #podrinfo {margin-left: 13px;}
+#podrinfocat {
+	float:left;
+	margin-left: 13px;
+	margin-top: 20px;
+	width:435px;
+}
 .inftab, .nazvinf{
 font-size: 16px;}
 .inftab { margin:0 0 12px; color: #524540}

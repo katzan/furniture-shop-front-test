@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title></title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen, projection" />
+	<link href="ulstyle.css" type="text/css" rel="stylesheet"/>
+	<link href="css/style.css" type="text/css" rel="stylesheet"/>
+<link href="jFlowPlusDemo/styles/styler.css" type="text/css" rel="stylesheet"/>
+<link href="jFlowPlusDemo/styles/jflow.style.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="jquery/1.4.2/jquery.min.js"></script>
+<script src="jFlowPlusDemo/scripts/jflow.plus.js" type="text/javascript"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+	    $("#myController").jFlow({
+			controller: ".jFlowControl", // must be class, use . sign
+			slideWrapper : "#jFlowSlider", // must be id, use # sign
+			slides: "#mySlides",  // the div where all your sliding divs are nested in
+			selectedWrapper: "jFlowSelected",  // just pure text, no sign
+			width: "668px",  // this is the width for the content-slider
+			height: "303px",  // this is the height for the content-slider
+			duration: 400,  // time in miliseconds to transition one slide
+			prev: ".jFlowPrev", // must be class, use . sign
+			next: ".jFlowNext", // must be class, use . sign
+			auto: true	
+    });
+});
+</script>
+<script type="text/javascript">
+jQuery(document).ready(function(){
+
+jQuery(".niceCheck").mousedown(
+/* при клике на чекбоксе меняем его вид и значение */
+function() {
+
+     changeCheck(jQuery(this));
+     
+});
+
+
+jQuery(".niceCheck").each(
+/* при загрузке страницы нужно проверить какое значение имеет чекбокс и в соответствии с ним выставить вид */
+function() {
+     
+     changeCheckStart(jQuery(this));
+     
+});
+
+                                        });
+
+function changeCheck(el)
+/* 
+	функция смены вида и значения чекбокса
+	el - span контейнер дял обычного чекбокса
+	input - чекбокс
+*/
+{
+     var el = el,
+          input = el.find("input").eq(0);
+   	 if(!input.attr("checked")) {
+		el.css("background-position","0 -18px");	
+		input.attr("checked", true)
+	} else {
+		el.css("background-position","0 0");	
+		input.attr("checked", false)
+	}
+     return true;
+}
+
+function changeCheckStart(el)
+/* 
+	если установлен атрибут checked, меняем вид чекбокса
+*/
+{
+var el = el,
+		input = el.find("input").eq(0);
+      if(input.attr("checked")) {
+		el.css("background-position","0 -18px");	
+		}
+     return true;
+}
+
+</script>
+    <script src="js/custom.js" type="text/javascript"></script> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+	<div id="header">
+		<div id="logo"><a href="#"><img src="img/logo.png" alt="Главная страница" /></a></div>
+		<div id="poisk"><form method="get" action="/search">
+		<span>Поиск на сайте:</span>
+		<input name="search" value="" type="text" id="searchform"/>
+		<button class="maia-button"><div id="searchcl">Поиск</div></button></form></div>
+		
+		<div id="zvonok">
+			<div id="logozvonok"><img src="img/tel.png" alt="Телефон"/>
+				<span class="nomer">8(495)999-12-09</span>
+			</div>
+			<div id="rv"><a class="rh" href="#">Зарегистрироваться</a><span></span><a class="vh" href="#">Войти</a></div>
+		</div>
+		<div id="palkaheader"><img src="img/art.png" alt=""/></div>
+		<div id="fmenu">
+			<ul id="menu">
+				<li><a href="#">Главная</a></li>
+				<li><a href="#">О нас</a>
+					<ul>
+						<li><a href="#">наши достижения</a></li>
+						<li><a href="#">наши партнеры</a></li>
+						<li><a href="#">отзывы о нас</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Каталог мебели</a></li>
+				<li><a href="#">Полезная информация</a></li>
+				<li><a href="#">Новости</a></li>
+				<li><a href="#">Контакты</a></li>			
+			</ul>
+		</div>
+		<div style="clear:both"></div>
+	</div><!-- #header-->
+
+	<div id="content">
+	   <div id="prodcont">
+		<div id="podrinfocat">
+			<div id="bigphotocat">
+				<div id="bigcat">
+					<a href="http://www.mebelvopt.ru/collection/14">
+						<img alt="Спальня Фаранкес (Brown)" src="img/fcolla210114JL-B1001b-2.png">
+					</a>
+				</div>
+			</div>
+			<div id="infoprod">
+				<h2 class="hv">Спальня Фаранкес (Brown)</h2>
+			</div>	
+		</div>
+		<div id="podrinfocat">
+			<div id="bigphotocat">
+				<div id="bigcat">
+					<a href="http://www.mebelvopt.ru/collection/14">
+						<img alt="Спальня Фаранкес (Brown)" src="img/fcolla210114JL-B1001b-2.png">
+					</a>
+				</div>
+			</div>
+			<div id="infoprod">
+				<h2 class="hv">Спальня Фаранкес (Brown)</h2>
+			</div>	
+		</div>
+		<div id="artniz">
+	   		<img alt="" src="img//artn.png">
+	   </div>
+	   <div id="podrinfocat">
+			<div id="bigphotocat">
+				<div id="bigcat">
+					<a href="http://www.mebelvopt.ru/collection/14">
+						<img alt="Спальня Фаранкес (Brown)" src="img/fcolla210114JL-B1001b-2.png">
+					</a>
+				</div>
+			</div>
+			<div id="infoprod">
+				<h2 class="hv">Спальня Фаранкес (Brown)</h2>
+			</div>	
+		</div>
+		<div id="podrinfocat">
+			<div id="bigphotocat">
+				<div id="bigcat">
+					<a href="http://www.mebelvopt.ru/collection/14">
+						<img alt="Спальня Фаранкес (Brown)" src="img/fcolla210114JL-B1001b-2.png">
+					</a>
+				</div>
+			</div>
+			<div id="infoprod">
+				<h2 class="hv">Спальня Фаранкес (Brown)</h2>
+			</div>	
+		</div>
+	   
+	   </div>
+
+	   
+		<div style="clear:both;"></div>
+<div style="clear:both; margin-bottom:20px"></div>
+
+	</div><!-- #content-->
+
+</div><!-- #wrapper -->
+
+<div id="footer">
+	<div id="footerinfo">Оптовая компания по поставке мебели в Россию MebelVopt.ru  <span></span>  тел: 8 (495) 999-12-09  <span></span>  email: info@mebelvopt.ru  <span></span> г.Долгопрудный, ул.Жуковского д.3 </div>
+	<div id="artniz"><img src="img/artn.png" alt=""/></div>
+	</div>
+<!-- #footer -->
+<img id="imgBg" src="img/bgfonv.png" alt="" />
+<img id="imgBg1" src="img/bgfonn.png" alt="" />
+</body>
+</html>
